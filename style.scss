@@ -1,0 +1,265 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Cabin" sans-serif;
+    }
+    
+    .coontainer {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        @media(max-width: 768px) {
+            width: 90%;
+        }
+    }
+    
+    .navigation {
+        display: flex;
+        margin: 15px auto;
+        padding-top: 20px;
+        @media(max-width: 768px) {
+            .container {
+                justify-content: space-between;
+            }
+        }
+        .hamburger {
+            display: none;
+            position: relative;
+            @media(max-width: 768px) {
+                flex: 0 0 24px;
+                display: block;
+                height: 3px;
+                background: black;
+                position: relative;
+                margin-top: 10px;
+                margin-left: auto;
+            }
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                background: inherit;
+                height: inherit;
+                width: 100%;
+                top: 6px;
+            }
+            &::after {
+                top: -6px;
+            }
+        }
+    }
+    
+    .navigation-logo {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .list-navigation {
+        display: inherit;
+        list-style: none;
+        margin-left: auto;
+        align-items: center;
+        @media(max-width: 768px) {
+            display: none;
+        }
+        &.active {
+            display: flex;
+            position: absolute;
+            right: 32px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 200px;
+            height: 300px;
+            background: rgba(0, 0, 0, 0.61);
+            top: 65px;
+            color: white;
+            cursor: pointer;
+        }
+        &.list-navigation-link {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+        &>* {
+            margin-left: 30px;
+        }
+    }
+    
+    .list-navigation-link a {
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .list-navigation-link a:hover {
+        color: darksalmon
+    }
+    
+    .hero {
+        max-width: 1024px;
+        margin: auto;
+        position: relative;
+        .hero-text {
+            position: absolute;
+            bottom: 200px;
+            width: 100%;
+            background-color: rgba(70, 70, 90, 0.6);
+            color: white;
+            letter-spacing: 2px;
+            font-size: 30px;
+            text-align: center;
+            margin: 0px;
+            padding: 5px;
+        }
+    }
+    
+    .img-img {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    
+    .text {
+        margin-top: 30px;
+    }
+    
+    .cart {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    .cart-row {
+        margin-top: 5rem;
+        display: flex;
+        padding-top: 60px;
+        background-color: lightslategray;
+        @media(max-width: 768px) {
+            flex-wrap: wrap;
+            ;
+        }
+        .cart-txt {
+            margin: auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .cart-img {
+            margin: auto;
+            padding-bottom: 4rem;
+        }
+    }
+    
+    .fother {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        margin-top: 5rem;
+        .list-navigation {
+            display: flex;
+            list-style: none;
+            margin-right: auto;
+            align-items: center;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+        }
+        .logo {
+            font-size: 22px;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+    
+    .form-contact {
+        margin: auto;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        max-width: 600px;
+    }
+    
+    .btn-submit {
+        max-width: 1024px;
+        position: relative;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+    
+    .form-contact div {
+        padding: 15px 0;
+    }
+    
+    .form-contact label {
+        display: block;
+        font-size: 17px;
+    }
+    
+    .form-contact input {
+        height: 50px;
+        width: 100%;
+    }
+    
+    .form-contact ul {
+        list-style: none;
+    }
+    
+    .form-contact li {
+        color: red;
+    }
+    
+    .input-group {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1024px;
+    }
+    
+    .prikaz {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1024px;
+    }
+    
+    .dugmad {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1024px;
+        margin-top: auto;
+    }
+    
+    .table {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1024px;
+    }
+    
+    .slidea {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1024px;
+    }
+    
+    //slider img
+    .slide-a img {
+        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .slide-a img:first-child {
+        display: block;
+    }
+    
+    .imgleft,
+    .imgright {
+        align-items: center;
+        text-align: center;
+        margin-left: 17rem;
+        margin-top: 30px;
+    }
